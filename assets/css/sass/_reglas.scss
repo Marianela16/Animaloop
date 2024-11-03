@@ -1,0 +1,67 @@
+/* @c-blue BARRA DE NAVEGACION */
+::-webkit-scrollbar {
+	width: 8px;     /* Ancho de la barra de desplazamiento */
+}
+::-webkit-scrollbar-track {
+	// background: #111111bb;
+	background-color: mix(black, $gray, 20%);
+}
+::-webkit-scrollbar-thumb {
+	background: $c-primario;
+	border-radius: 20px;
+}
+::-webkit-scrollbar-thumb:hover {
+	background: $c-primario-oscuro;
+	cursor: pointer;     /* Color del "dedo" cuando se pasa el ratón sobre él */
+}
+
+/* Para ocultar las flechas de desplazamiento */
+::-webkit-scrollbar-button {
+	display: none;
+}
+.sdw-5:hover {
+	box-shadow: 0px 0px 30px 5px $c-primario-50;
+}
+
+.btn-p {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	justify-content: center;
+	font-weight: bold;
+}
+img {
+	max-width: 100%;
+	height: auto;
+	vertical-align: middle;
+}
+.unstyled {
+	padding-left: 0;
+	list-style: none;
+	margin-bottom: 0;
+}
+
+/* @c-red SLIDER BTN */
+.banner-slider {
+	.sw-btn{
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		z-index: 999;
+		font-size: 2rem;
+    	margin: 0 1rem;
+		color: mix(white, $graytxt, 50%);
+		opacity: 0;
+		@media (max-width: 600px) {
+			display: none;
+		}
+	}
+	.swiper-button-{
+		&n{
+			right: 0;
+		}
+		&p{
+			left: 0;
+		}
+	}
+}

@@ -1,0 +1,29 @@
+{
+    "inline-bookmarks.view.showVisibleFilesOnly": true,
+    "search.useIgnoreFiles": false,
+    "search.useGlobalIgnoreFiles": true,
+    "favorites.resources": [
+        {
+            "filePath": "assets\\css\\bs5.scss",
+            "group": "ESTILOS"
+        },
+        {
+            "filePath": "assets\\css\\sass",
+            "group": "ESTILOS"
+        },
+        {
+            "filePath": "assets\\css\\app.css",
+            "group": "ESTILOS"
+        }
+    ],
+    "favorites.groups": [
+        "ESTILOS",
+        "PHP",
+        "HTML",
+        "JAVASCRIPT",
+        "PRUEBAS"
+    ],
+    "favorites.currentGroup": "ESTILOS",
+    "favorites.sortOrder": "DESC",
+    "favorites.sortDirection": "ASC"
+}

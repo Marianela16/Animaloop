@@ -1,0 +1,83 @@
+
+* {
+    -webkit-user-select: none !important;
+    -moz-user-select: none !important;
+    user-select: none !important;
+    font-size: var(--bs-body-font-size);
+}
+.body{
+    background-color: black !important;
+}
+.cont_white{
+    background-color: white;
+    margin: 0 calc(-1.5rem * 0.5);
+    padding: 0 calc(1.5rem * 0.5);
+    border-radius: 2rem;
+    padding-bottom: 15px
+}
+td > * {
+    color: black;
+    text-decoration: none
+}
+#tablaUsuarios tr td:nth-child(2) {
+    user-select: all !important;
+}
+a {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -moz-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-touch-callout: none;
+    -moz-touch-callout: none;
+    -ms-touch-callout: none;
+    -webkit-user-drag: none;
+    -moz-user-drag: none;
+    -ms-user-drag: none;
+    text-decoration: none !important;
+
+}
+
+a:active {
+    outline: none !important;
+    box-shadow: none !important;
+}
+.probando{
+    display: flex;
+    justify-content: space-between;
+    max-width: 300px;
+}
+.probando div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+#tablaUsuarios > :not(caption) > tr > :nth-child(even) {
+background-color: transparent !important;
+}
+#tablaUsuarios > :not(caption) > * > *  {
+    background-color: #c7c7c746 !important;
+}
+.td_gris{
+    background-color: #c7c7c746 !important;
+}
+#probando img{
+    height: 250px;
+}
+#probando .td_gris{
+    width: 166px;
+}
+.modal-dialog {
+    max-width: 900px !important;
+}
+.page-link.active, .active > .page-link {
+    background-color: black;
+    border-color: black;
+}
+@media (max-width: 768px) {
+    .container-sm {
+        max-width: 855px !important;
+    }
+}
+@media (max-width: 576px){
+    .container-sm {
+        max-width: 649px !important;
+    }
+}

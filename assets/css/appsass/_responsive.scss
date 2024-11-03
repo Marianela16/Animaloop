@@ -1,0 +1,47 @@
+/* @c-red RESPONSIVE HTML */
+@function px-to-vw($font-size, $screen-width) {
+	@return ($font-size / ($screen-width / 100)) * 1vw;
+}
+@media (min-width:1500px) {
+	html {
+		font-size: px-to-vw(16, 1500);
+	}
+}
+@media (max-width:1499px) {
+	html {
+		font-size: px-to-vw(16, 1499);
+	}
+}
+@media (max-width:1200px) {
+	html {
+		font-size: px-to-vw(13, 1200);
+	}
+}
+@media (max-width:1000px) {
+	html {
+		font-size: 12.5px;
+	}
+}
+@media (max-width:576px) {
+	html {
+		font-size: px-to-vw(14, 576);
+	}
+    .animes .row, .tendencia {
+        padding: 0 10px;
+    }
+}
+@media (max-width:450px) {
+	html {
+		font-size: px-to-vw(13.7, 450);
+	}
+}
+@media (min-width: 1200px) {
+    .container-xl, .container-lg, .container-md, .container-sm, .container {
+        max-width: 74.25rem;
+    }
+}
+@media (min-width: 1400px) {
+    .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
+        max-width: 69.5rem;
+    }
+}

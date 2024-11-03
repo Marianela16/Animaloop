@@ -1,0 +1,18 @@
+/* @c-red TENDENCIA SLIDER */
+.cont-tendencia{
+    .cont-btn{
+        position: absolute;
+        top: 0;
+        right: 0;
+        user-select: none;
+    }
+    .sw-btn{
+        display: inline-block;
+        background-color: #212121;
+        padding: 0.625rem;
+        font-size: 1.2rem;
+        padding: 0.5rem 1rem;
+        border-radius: 8px;
+        color: #7A7F85;
+    }
+}

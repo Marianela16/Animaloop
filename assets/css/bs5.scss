@@ -1,0 +1,165 @@
+@import "variables";
+@import "../../node_modules/bootstrap/scss/bootstrap";
+@import "sass/unidades";
+@import "sass/reglas";
+@import "sass/inputselect";
+@include make-col-custom("2-4", 2.4);
+
+.sdw-5:hover {
+	box-shadow: 0px 0px 30px 5px $c-primario-50;
+}
+.btn-p {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	justify-content: center;
+	font-weight: bold;
+}
+img {
+	max-width: 100%;
+	height: auto;
+	vertical-align: middle;
+}
+.unstyled {
+	padding-left: 0;
+	list-style: none;
+	margin-bottom: 0;
+}
+.cus-btn {
+	font-family: "Inter", sans-serif;
+	font-size: 22px;
+	font-weight: 700;
+	line-height: 130%;
+	padding: 12px 32px;
+	display: flex;
+	justify-content: center;
+	width: fit-content;
+	align-items: center;
+	gap: 10px;
+	transition: all 0.2s ease-in-out;
+	border-radius: 15px;
+	border: none;
+
+	i {
+		font-size: 24px;
+	}
+	@media (max-width:492px) {
+		i {
+			font-size: 20px;
+		}
+		font-size: 18px;
+		padding: 12px 24px;
+		border-radius: 12px;
+	}
+	&.primary {
+		padding: 14px 40px;
+		background-color: $c-primario;
+		color: #1B1B1B;
+
+		@media (max-width:492px) {
+			font-size: 16px;
+			padding: 12px 20px;
+			border-radius: 12px;
+		}
+		&:hover {
+			background-color: $c-primario;
+			color: #1B1B1B;
+			box-shadow: 0px 0px 30px 5px $c-primario-50;
+		}
+	}
+	&.light {
+		padding: 14px 20px;
+		background: rgb(0 0 0 / 66%);
+		border-radius: 0;
+		// backdrop-filter: blur(2px);
+		color: #F8F8FF;
+		font-size: 1.6rem;
+		font-weight: 200;
+		line-height: 130%;
+		// font-family: "Open Sans", sans-serif;
+		font-family: 'Noir Pro';
+
+		i {
+			font-size: 20px;
+		}
+		@media (max-width:492px) {
+			i {
+				font-size: 18px;
+			}
+		}
+		&:hover {
+			color: $c-primario;
+		}
+	}
+}
+
+/* @c-red Conteiner anime video */
+.inner-banner {
+	background: url(../media/backgrounds/bg-2.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.inner-banner .videoplayer .aks-video-player {
+	height: 615px !important;
+	border-radius: 12px;
+}
+@media (max-width:1199px) {
+	.inner-banner .videoplayer .aks-video-player {
+		height: 454px !important;
+	}
+}
+@media (max-width:575px) {
+	.inner-banner .videoplayer .aks-video-player {
+		height: 254px !important;
+	}
+}
+.inner-banner .videoplayer .icon-block {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	gap: 12px;
+}
+.inner-banner .videoplayer .icon-block .icon {
+	display: inline-flex;
+	padding: 16px;
+	justify-content: center;
+	align-items: flex-start;
+	gap: 10px;
+	border-radius: 50px;
+	border: 1px solid #fff;
+	background: rgba(45, 36, 36, 0.6);
+	box-shadow: 10px 10px 30px 0px rgba(0, 0, 0, 0.3);
+	backdrop-filter: blur(5px);
+}
+
+/* @c-red Video conetenedor detail */
+.inner-banner .videoplayer .icon-block .icon i {
+	font-size: 20px;
+	color: #f8f8ff;
+}
+.inner-banner .videoplayer .icon-block .time {
+	display: flex;
+	padding: 10px 13px;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	border-radius: 41px;
+	border: 1px solid #fff;
+	background: #fff;
+	box-shadow: 10px 10px 30px 0px rgba(0, 0, 0, 0.3);
+	backdrop-filter: blur(25px);
+}
+.inner-banner .videoplayer .icon-block .time span {
+	color: #1b1b1b;
+	text-align: center;
+	font-family: "Open Sans", sans-serif;
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 130%;
+}
+@media (max-width:575px) {
+	.inner-banner .videoplayer .icon-block .time span {
+		font-size: 16px;
+	}
+}

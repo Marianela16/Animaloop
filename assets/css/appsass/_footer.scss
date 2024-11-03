@@ -1,0 +1,31 @@
+.cont-footer{
+    background-color: #0e0e0e;
+    z-index: 999999;
+    position: relative;
+}
+footer{
+    padding: 4rem 1rem;
+    @media (max-width: 550px){
+        padding: 4rem 0rem;
+    }
+    .logo{
+        font-weight: bold;
+        font-size: 1.3rem;
+        i{
+            color: $c-primario;
+            transform: translateY(.1rem);
+        }
+    }
+    span{
+        line-height: 1 !important;
+        font-size: 1rem;
+        margin-left: 1rem;
+        min-width: max-content;
+    }
+    ul{
+        font-size: 1.7rem;
+        i:hover{
+            color: $c-primario;
+        }
+    }
+}
