@@ -29,9 +29,12 @@
                 <div class="container-fluid">
                     <div class="signup-block">
                         <h1 class="text-white mb-32">Registrate</h1>
-                        <form action="">
+                        <form action="procesar.php" method="post">
+                        <div class="mb-32">
+                                <input class="form-control mb-32" name="nombre" placeholder="Ingresa tu nombre" type="text" />
+                            </div>
                             <div class="mb-32">
-                                <input class="form-control mb-32" name="email" placeholder="Tu correo electrónico" type="email" />
+                                <input class="form-control mb-32" name="email" placeholder="Ingresa tu correo electrónico" type="email" />
                             </div>
                             <div class="mb-32">
                                 <input class="form-control mb-32" name="password" placeholder="Introducir contraseña" type="password" />

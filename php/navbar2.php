@@ -99,6 +99,7 @@
                         <img src="assets/media/author/profile.png" alt="">
                     </a>
                     <ul class="dropdown-menu dropdown-menu-end bg-light-black">
+                        <li><a class="dropdown-item" ></a></li>
                         <li><a class="dropdown-item" href="/sign-up.php">Registrate</a></li>
                         <li><a class="dropdown-item" href="/login.php">Inicia Sesion</a></li>
                     </ul>

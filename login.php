@@ -31,7 +31,7 @@
                             <a class="facebook hide-link mb-24" href="#"><img alt="" src="assets/media/icons/facebook-2.php" />Continuar con Facebook</a>
                             <button class="mail hide-link mb-32" id="continue-email"><img alt="" src="assets/media/icons/mail.php" />Continuar con correo</button>
                             <div class="login-sec hide-form" style="display: none;">
-                                <form action="">
+                                <form action="iniciar_correo.php" method="post">
                                     <div class="mb-32">
                                         <input class="form-control mb-32" name="email" placeholder="Tu correo electrónico" type="email" />
                                     </div>
@@ -66,6 +66,20 @@
 
     <!-- Guiones del sitio -->
     <script src="assets/js/app.js"></script>
+    <script>
+    document.getElementById('continue-email').addEventListener('click', function() {
+        // Muestra el formulario de inicio de sesión y oculta el botón "Continuar con correo"
+        document.querySelector('.login-sec').style.display = 'block';
+        document.getElementById('continue-email').style.display = 'none';
+    });
+
+    // Para ocultar el formulario y volver a mostrar el botón, agrega este código
+    document.getElementById('backtologin').addEventListener('click', function() {
+        document.querySelector('.login-sec').style.display = 'none';
+        document.getElementById('continue-email').style.display = 'block';
+    });
+</script>
+
 </body>
 
 
